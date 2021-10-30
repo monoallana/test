@@ -1,0 +1,344 @@
+html {
+    /*    1rem = 16px*/
+    font-size: 1rem;
+}
+
+body {
+    background-color: rgb(255, 251, 236);
+    /*    body font*/
+    font-family: 'Montserrat', sans-serif;
+    /*    font-weight: 700;*/
+    /*    line-height is 150% of the font size*/
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+}
+
+p {
+    margin-bottom: 1.3rem;
+}
+
+/*this is a group selection, selecting all the headlines h1-h4*/
+h1,
+h2,
+h3,
+h4 {
+    /*    headline font*/
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #4b6319;
+}
+
+h1 {
+    /*  top:0 right:0  bottom:0.5rem left:0*/
+    margin: 0 0 0.5rem 0;
+    font-size: 3.157rem;
+}
+
+h2 {
+    /*  top:1.414rem right:0  bottom:0.5rem left:0*/
+    margin: 1.414rem 0 0.5rem 0;
+    font-size: 2.369rem;
+}
+
+h3 {
+    /*  top:1.414rem right:0  bottom:0.5rem left:0*/
+    margin: 1.414em 0 0.5rem 0;
+    font-size: 1.777rem;
+}
+
+h4 {
+    /*  top:1.414rem right:0  bottom:0.5rem left:0*/
+    margin: 1.414em 0 0.5rem 0;
+    font-size: 1.333rem;
+    font-weight: 50;
+}
+
+/*Interactive elements*/
+
+/* link*/
+
+a {
+    color: #FF6347;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #7B2E3E;
+    text-decoration: none;
+}
+
+/*button style*/
+/*solid button style*/
+.btn-primary {
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    line-height: 2rem;
+    border-radius: 3rem;
+    /*    top:1 right:2 bottom:1 left:2*/
+    /*    the size of button*/
+    padding: 1rem 2rem;
+    background-color: indigo;
+    color: black;
+    border: none;
+}
+
+.btn-primary:hover {
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+}
+
+/*outline button style*/
+.btn-outline-primary {
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    line-height: 2rem;
+    border-radius: 3rem;
+    padding: 1rem 2rem;
+    color: indigo;
+    background-color: transparent;
+    border: 1px indigo solid;
+    transition: all 0.5s;
+}
+
+.btn-outline-primary:hover {
+    color: white;
+    background-color: indigo;
+    border-color: indigo;
+}
+
+/*self-defined class names*/
+
+/*navigation*/
+/*-----navigation background------*/
+.navbackground{background-color: rgb(255, 251, 236);}
+
+/*-----navigation button in the mobile view------*/
+.navbar-light .navbar-toggler {
+    color: none;
+    border-color: #7b2e3e;
+    border-width: 3px;
+}
+
+/*-----navigation brand name------*/
+.navbar-light .navbar-brand{
+    color: #7b2e3e;
+    font-weight: 900;
+}
+
+/*-----navigation brand name hover color----*/
+.navbar-light .navbar-brand:hover{
+    color: tomato;
+}
+
+/*-------navigation menu links--------*/
+.navbar-light .navbar-nav .nav-link{
+    color: #4b6319;
+    font-weight: 1.2rem;
+    padding-bottom: 5px;
+}
+
+
+/*-------navigation menu links hover color-------*/
+.navbar-light .navbar-nav .nav-link:hover {
+    color: tomato;
+}
+
+/*navigation menu links focus color*/
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: teal;
+}
+
+/*   When scroll to the section, the menu items will automatically turn to a different color */
+
+.navbar-light a.active {
+    color: tomato !important;
+    /*    background-color: #55555a !important;*/
+}
+
+.socs {
+    padding-top: 10px;
+}
+
+.social {
+    font-size: 2rem;
+    padding: 0.5rem;
+    color: #B8860B;
+}
+
+.social:hover {
+    color: #FFD5C2;
+}
+
+.nav-item h3 {
+    margin: 5px;
+}
+
+
+.header h3{
+    color: rgb(255, 99, 71);
+}
+
+.moi{
+    padding: 30px;
+    padding-top: 75px;
+}
+
+.me {
+    border-radius: 50%;
+    padding: 50px;
+    width: 600px;
+}
+
+.icons{
+    width: 50px;
+    padding-top: 20px;
+}
+.mid {
+    background-color: #4b6319;
+    padding: 30px;
+}
+
+.mid h1{
+    color: tomato;
+    font-size: 18vh;
+}
+
+.gallery {
+    padding: 60px;
+    /* padding-right: 175px;
+    padding-left: 175px; */
+    background-color: #FFD5C2;
+}
+
+.gallery h1{
+    color:#7b2e3e;
+    padding-bottom: 25px;
+}
+
+.gal img{
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 30px;
+    border-radius: 1%;
+}
+
+.portfolio-link img {
+    filter: opacity(50%);
+}
+
+.portfolio-link img:hover {
+    filter: opacity(100%);
+}
+
+.bottom {
+    text-align: center;
+    height: 60vh;
+}
+
+.bottom h1{
+    padding-top: 50px;
+    color: #B8860B;
+}
+
+/*portfolio modal*/
+.portfolio-modal .modal-body {
+    position: static;
+}
+
+.portfolio-modal{
+    overflow: auto;
+}
+
+/*modal box size*/
+.portfolio-modal .modal-dialog {
+/*    Full screen style*/
+    max-width: 100%;
+    max-height: 100%;
+    width:100%;
+    height:100%;
+    margin: 0 auto;
+}
+
+/*content area*/
+.portfolio-modal .modal-content {
+    /*the paragraph font color*/
+    color: #746f6f;
+    padding: 0 0 2rem 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: left;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    /*the background-color*/
+    background-color: white;
+}
+
+/*project title*/
+.portfolio-modal .modal-content h2 {
+    color: #ff9708;
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.portfolio-modal .modal-content img{
+    margin-bottom: 30px;
+    padding-right: 40px;
+}
+
+/*bottom of the modal box including prev, next, back to work*/
+.portfolio-modal .modal-footer {
+    border: none;
+}
+
+
+/*the X close icon*/
+.portfolio-modal .modal-header .close {
+    color: rgb(177, 47, 14);
+    font-size: 3rem;
+    font-weight: 300;
+    padding-right: 2rem;
+
+}
+
+.portfolio-modal .modal-header {
+    border-bottom: none;
+}
+
+.portfolio-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+}
+
+/*modal box prev, next and back to work link color*/
+.portfolio-modal a.next,
+.portfolio-modal a.prev,
+.portfolio-modal a.back {
+    text-decoration: none;
+    opacity: 50%;
+    
+}
+
+.portfolio-modal a.next:hover,
+.portfolio-modal a.prev:hover,
+.portfolio-modal a.back:hover {
+    color: #ff9708;
+    opacity: 100%;
+    
+}
+
+/* bottom */
+.bottom{
+    height: 35vh;
+}
+
+.date {
+    margin-bottom: 3rem;
+    color: #FFD5C2;
+}
